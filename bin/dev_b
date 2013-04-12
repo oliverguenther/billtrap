@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+# Executable with absolute path to lib for hacking and development
+require File.join(File.dirname(__FILE__), '..', 'lib', 'billtrap')
+# run on argv
+BillTrap::CLI.args = Array.new(ARGV)
+BillTrap::CLI.invoke
